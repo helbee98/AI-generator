@@ -18,6 +18,12 @@ function generateHoroscope(event) {
     let prompt = `User instructions: Generate a horoscope about ${instructionsInput.value}`;
     let apiUrl= `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+    let horoscopeboxElement = document.querySelector("#horoscope");
+    horoscopeboxElement.classList.remove("hidden");
+    horoscopeboxElement.innerHTML = `<div class="blink">⌛ Generating your horoscope 🔮 </div>`
+
+
+
     console.log(`prompt: ${prompt}`);
     console.log(`context: ${context}`)
 axios.get(apiUrl).then(displayHoroscope)

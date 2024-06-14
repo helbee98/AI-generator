@@ -11,8 +11,7 @@ h1 {
 }
 
 form {
-    padding: 30px;
-    border-radius: 10px;
+    
     display: flex;
 }
 
@@ -56,3 +55,37 @@ max-width: 600px;
 
 }
 
+.form-container {
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+    padding: 10px 5px;
+}
+
+.hint {
+
+    opacity: 0.6;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+
+}
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
