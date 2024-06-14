@@ -1,5 +1,5 @@
 function displayHoroscope(response) {
-    console.log("horoscope genreted")
+    
      new Typewriter('#horoscope', {
         strings: response.data.answer,
         autoStart: true,
@@ -24,8 +24,6 @@ function generateHoroscope(event) {
 
 
 
-    console.log(`prompt: ${prompt}`);
-    console.log(`context: ${context}`)
 axios.get(apiUrl).then(displayHoroscope)
 
    
