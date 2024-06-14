@@ -7,8 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
     <header>
-    <h1>Welcome to my AI horoscope generator</h1> 
+    <h1> Welcome to my AI horoscope generator </h1> 
     </header>
 
     <main>
@@ -18,12 +19,14 @@
         placeholder="Enter text"
         autofocus
         required
-        autocomplete="off"/>
-        </form>
-        <input type="submit" />
+        autocomplete="off"
+        class="search-bar"/>
+        
+        <input type="submit" class="search-button" />
+    </form>
     </main>
 
-    <div>
+    <div class="horoscope">
         Horoscope 
         <br />
         Today you might decide to do some repairs or decorating in your home. You'll have a lot of good ideas welling up from deep within you, Cancer, and be astute enough to put them to work in the real world. You might not feel much like talking, however. Therefore, don't be surprised if communication is more subtle than overt today.
@@ -42,6 +45,7 @@
         <a href="https://dulcet-frangollo-a16568.netlify.app/" target="_blank">netifly</a>
 
     </footer>
+</div>
     <script src="src/index.js"></script>
 </body>
 </html>
